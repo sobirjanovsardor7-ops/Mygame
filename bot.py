@@ -32,7 +32,7 @@ async def chat(update: Update, context: ContextTypes.DEFAULT_TYPE):
     try:
         response = await asyncio.to_thread(
             client.models.generate_content,
-            model="gemini-2.5-flash",
+            model="gemini-2.8-flash",
             contents=update.message.text
         )
 
